@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction</title>
+    <link rel="stylesheet" href="./css/article.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/load.js"></script>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="./mediagraphie.html">Médiagraphie</a></li>
+            <li><a href="./outils/index.html">Outils</a></li>
+            <li><a href="./commencer.html">Commencer</a></li>
+            <li><a href="./index.html">Accueil</a></li>
+        </ul>
+    </nav>
+    <hr />
+</header>
+
+<body>
+    <p class="titlein">À savoir</p>
+    <hr>
+    <div class="block">
+        <b class="blocktitle">Le modèle client-serveur</b>
+        <p>
+        </p>
+        <p>
+            <li>Dans le monde informatique, ce modèle est utilisé partout</li>
+        </p>
+        <p>
+            <li>Il est donc important de comprendre comment ça fonctionne, pour pouvoir commprendre le reste</li>
+        </p>
+        <br>
+        <p>
+            <h1 style="font-size: 1.2em;">Le client:</h1>
+        </p>
+        <p>
+            <li> Gère l'aspect visual du site/application</li>
+            <br>
+            <li> Demande au serveur pour de l'information</li>
+            <br>
+            <li> Contient du code qui est visible </li>
+            <br>
+            <li> Représente votre appareil</li>
+        </p>
+        <br>
+        <p>
+            <h1 style="font-size: 1.2em;">Le serveur:</h1>
+        </p>
+        <p>
+            <li> Sert des fichiers</li>
+            <br>
+            <li> Gère les bases de données</li>
+            <br>
+            <li> Répond ou ne répond pas aux demandes du client</li>
+            <br>
+            <li> Assure la sécurité</li>
+            <br>
+            <li> Ne contient pas de code visible</li>
+            <br>
+            <li> Représente un autre appareil, normallement situé dans le quartier général des compagnies</li>
+        </p>
+        <br>
+        <u style="font-size: 1.3em;">Le client établie une connexion à travers l'Internet avec le serveur</u>
+        <br><br>
+
+        <p>Voici une image qui représente le modèle client-serveur <b>(1)</b></p>
+        <img src="./images/csmodel.png" alt="" style="height: 10em;">
+        <br><br><br>
+        <p>
+
+            <h1 style="font-size: 1.2em;">Un exemple: Inspecter l'élément?</h1>
+        </p>
+        <p>
+            <li>
+                Les jeunes aiment faire utiliser ce petit truc pour impressioner des gens
+            </li>
+        </p>
+        <p>
+            <li>
+                Ça ne marche pas puisque le client ne demande pas au serveur de sauvergarder les modifications
+            </li>
+        </p>
+        <p>
+            <li>
+                Les modifications sont donc temporaires, sauf si le serveur sauvegarde le contenu des éléments automatiquement
+            </li>
+        </p>
+        <br>
+        <h1 style="font-size: 1.2em;">Les comptes banquaires</h1>
+        </p>
+        <p>
+            <li>
+                Pour savoir j'ai combien d'argent, je demande au serveur de m'envoyer de l'information pour connaître le montant de mon compte
+            </li>
+        </p>
+        <p>
+            <li>
+                Le client se charge de lire l'information pour l'afficher à l'utilisateur
+            </li>
+        </p>
+    </div>
+    <br>
+
+    <div class="changepagebuttons">
+        <button id="switchpage" class="pageswitch">J'ai compris, je peux commencer la visite du site!</button>
+    </div>
+
+    <script>
+        $("#switchpage").off().on('click', function() {
+            $("*").fadeOut(500)
+            setTimeout(() => window.location = `./visite/types.html`, 500)
+        });
+    </script>
+</body>
+
+</html>
